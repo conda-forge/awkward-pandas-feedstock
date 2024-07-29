@@ -1,13 +1,13 @@
-{% set name = "awkward-pandas" %}
-{% set version = "2023.8.0" %}
+{% set name = "akimbo" %}
+{% set version = "2024.7.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/a/awkward_pandas/awkward_pandas-{{ version }}.tar.gz
-  sha256: 56b7b735241502423ac9afb49db0dd3bb5905a51a53cdfe476e9d4316a975fde
+  url: https://pypi.io/packages/source/a/akimbo/akimbo-{{ version }}.tar.gz
+  sha256: 5a29d2eb53f2cac2053cde71ed989d0b1f2e0af5f21d7b11d68d16d32d83288f
 
 build:
   noarch: python
@@ -24,27 +24,27 @@ requirements:
   run:
     - python >=3.8
     - awkward >=2.0.0
-    - pandas >=1.2
     - pyarrow >=7.0.0
 
 test:
   imports:
-    - awkward_pandas
+    - akimbo
   requires:
     - pip
   commands:
     - pip check
 
 about:
-  home: https://awkward-pandas.readthedocs.io/
+  home: https://akimbo.readthedocs.io/
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: Connecting awkward-array and Pandas.
+  summary: For when your data won't fit in your dataframe
   description: |
-    An Awkward extension array for use with Pandas.
-  doc_url: https://awkward-pandas.readthedocs.io/
-  dev_url: https://github.com/intake/awkward-pandas/
+    The akimbo project provides a Dataframe accessor for various backend, that enable analysis of nested, 
+    non-tabular data in workflows.
+  doc_url: https://akimbo.readthedocs.io/
+  dev_url: https://github.com/intake/akimbo/
 
 extra:
   recipe-maintainers:
