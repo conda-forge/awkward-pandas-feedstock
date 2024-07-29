@@ -1,19 +1,20 @@
-About awkward-pandas-feedstock
-==============================
+About akimbo-feedstock
+======================
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/awkward-pandas-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/akimbo-feedstock/blob/main/LICENSE.txt)
 
-Home: https://awkward-pandas.readthedocs.io/
+Home: https://akimbo.readthedocs.io/
 
 Package license: BSD-3-Clause
 
-Summary: Connecting awkward-array and Pandas.
+Summary: For when your data won't fit in your dataframe
 
-Development: https://github.com/intake/awkward-pandas/
+Development: https://github.com/intake/akimbo/
 
-Documentation: https://awkward-pandas.readthedocs.io/
+Documentation: https://akimbo.readthedocs.io/
 
-An Awkward extension array for use with Pandas.
+The akimbo project provides a Dataframe accessor for various backend, that enable analysis of nested,
+non-tabular data in workflows.
 
 
 Current build status
@@ -22,8 +23,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20123&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/awkward-pandas-feedstock?branchName=main">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/akimbo-feedstock?branchName=main">
       </a>
     </td>
   </tr>
@@ -34,53 +35,53 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-awkward--pandas-green.svg)](https://anaconda.org/conda-forge/awkward-pandas) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/awkward-pandas.svg)](https://anaconda.org/conda-forge/awkward-pandas) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/awkward-pandas.svg)](https://anaconda.org/conda-forge/awkward-pandas) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/awkward-pandas.svg)](https://anaconda.org/conda-forge/awkward-pandas) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-akimbo-green.svg)](https://anaconda.org/conda-forge/akimbo) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/akimbo.svg)](https://anaconda.org/conda-forge/akimbo) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/akimbo.svg)](https://anaconda.org/conda-forge/akimbo) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/akimbo.svg)](https://anaconda.org/conda-forge/akimbo) |
 
-Installing awkward-pandas
-=========================
+Installing akimbo
+=================
 
-Installing `awkward-pandas` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `akimbo` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `awkward-pandas` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `akimbo` can be installed with `conda`:
 
 ```
-conda install awkward-pandas
-```
-
-or with `mamba`:
-
-```
-mamba install awkward-pandas
-```
-
-It is possible to list all of the versions of `awkward-pandas` available on your platform with `conda`:
-
-```
-conda search awkward-pandas --channel conda-forge
+conda install akimbo
 ```
 
 or with `mamba`:
 
 ```
-mamba search awkward-pandas --channel conda-forge
+mamba install akimbo
+```
+
+It is possible to list all of the versions of `akimbo` available on your platform with `conda`:
+
+```
+conda search akimbo --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search akimbo --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search awkward-pandas --channel conda-forge
+mamba repoquery search akimbo --channel conda-forge
 
-# List packages depending on `awkward-pandas`:
-mamba repoquery whoneeds awkward-pandas --channel conda-forge
+# List packages depending on `akimbo`:
+mamba repoquery whoneeds akimbo --channel conda-forge
 
-# List dependencies of `awkward-pandas`:
-mamba repoquery depends awkward-pandas --channel conda-forge
+# List dependencies of `akimbo`:
+mamba repoquery depends akimbo --channel conda-forge
 ```
 
 
@@ -102,7 +103,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
@@ -125,17 +126,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating awkward-pandas-feedstock
-=================================
+Updating akimbo-feedstock
+=========================
 
-If you would like to improve the awkward-pandas recipe or build a new
+If you would like to improve the akimbo recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/awkward-pandas-feedstock are
+Note that all branches in the conda-forge/akimbo-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
@@ -151,5 +152,6 @@ Feedstock Maintainers
 =====================
 
 * [@douglasdavis](https://github.com/douglasdavis/)
+* [@jpivarski](https://github.com/jpivarski/)
 * [@martindurant](https://github.com/martindurant/)
 
