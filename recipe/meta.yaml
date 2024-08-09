@@ -1,5 +1,5 @@
 {% set name = "akimbo" %}
-{% set version = "2024.7.1" %}
+{% set version = "2024.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/a/akimbo/akimbo-{{ version }}.tar.gz
-  sha256: 5a29d2eb53f2cac2053cde71ed989d0b1f2e0af5f21d7b11d68d16d32d83288f
+  sha256: 05c9144b593df264615ab5d9dd66aec199989777cde926cb215249e239ed5870
 
 build:
   noarch: python
